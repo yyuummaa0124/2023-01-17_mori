@@ -1,27 +1,32 @@
-body{
-  padding: 0px;
-  margin: 0px;
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
 }
 
-header{
-display: flex;
-justify-content: space-between;
-}
-
-header img{
+header img {
   margin-left: 30px;
+  width: 150px;
 }
 
+header ul {
+  display: flex;
+  align-self: center;
+}
 
-header li{
-  display: inline-block;
+header a{
+text-decoration: none;
+}
+
+header li {
   list-style: none;
   margin-right: 15px;
   color: darkgray;
 }
 
-section{
+.main_toppage{
   position: relative;
+  margin-bottom: 50px;
 }
 
 .main_toppage_content{
@@ -32,9 +37,7 @@ section{
 .main_toppage_content div {
   height: 100%;
   width: 60%;
-
 }
-
 
 .main_toppage_content img{
   width: 100%;
@@ -43,32 +46,40 @@ section{
 
 .main_toppage_ttl{
   position: absolute;
-  top : 20%;
+  top : 15%;
   left: 20%;
+}
 
+.main_toppage_ttl h1 {
+  font-size: 46px;
+  line-height: 75px;
+  color: rgb(209, 81, 124);
+    padding-bottom: 35px;
+}
+
+.main_toppage_ttl span {
+  color: rgb(77, 164, 175);
 }
 
 .main_toppage_subttl p:nth-child(1) {
-  color: fuchsia;
+  color: rgb(209, 81, 124);
   font-size: 22px;
   margin: 0px;
 }
 
 .main_toppage_subttl span{
-  color: cornflowerblue;
+  color: rgb(77, 164, 175);
 }
 
-.main_toppage_subttl p{
+.main_toppage_subttl p:nth-child(2){
+  padding-top: 5px;
   color: darkgray;
-  margin: 0px;
-}
-
-.main_toppage_ttl h1{
-  padding-bottom:30px;
+  line-height: 25px;
 }
 
 .main_news{
   text-align: center;
+  margin-bottom: 70px;
 }
 
 .main_news_content{
@@ -77,40 +88,28 @@ section{
   text-align: left;
 }
 
+
+.main_news_content p{
+  color: rgb(209, 81, 124);
+}
+
 .main_news_content h2{
   color: darkgray;
-  margin: 0%;
-  padding-bottom: 15px;
-  padding-top: 10px;
-}
-
-.main_news_content p {
-  margin: 0px;
-}
-.section_news p {
-  margin-bottom: 5px;
-}
-
-.section_news h2{
-margin-top: 0;
-color: darkgray;
+  font-size: 24px;
+  padding-bottom: 30px;
+  padding-top: 15px;
 }
 
 .item_list{
   text-decoration: none;
   color: gray;
-  padding: 5px;
-}
 
-.item_list ul{
-  margin-block-start: 0px;
-  margin-block-end: 0px;
 }
 
 .item_list li{
   list-style: none;
   border-bottom: 1px solid gainsboro;
-  padding-bottom: 15px;
+  padding: 20px 0px;
 }
 
 .item_list span{
@@ -119,7 +118,6 @@ color: darkgray;
   padding: 0 15px 0;
   margin: 0 25px 0;
   color: aliceblue;
-
 }
 
 .item_list_topline{
@@ -129,7 +127,6 @@ color: darkgray;
 
 .item_list_underline{
   margin-top: 30px;
-  margin-bottom: 70px;
   border-bottom: 1px solid gray;
 }
 
@@ -141,24 +138,35 @@ background-color: #eeeeeb;
 
 .main_about_ttl{
   text-align: center;
-  padding-left: 25px ;
+}
+
+.main_about_ttl p{
+  color: rgb(209, 81, 124);
+  padding: 15px 0px;
 }
 
 .main_about_ttl h2{
   color: rgb(134, 134, 134);
+  margin-bottom: 15px;
+  font-size: 20px;
 }
 
 .main_about_content{
   display: flex;
   justify-content: space-around;
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
   color: rgb(122, 122, 122);
+  line-height: 25px;
+}
+
+.main_about_content p:nth-child(1){
+  margin: 20px 0;
 }
 
 .main_about_img{
   width: 340px;
-  margin-top: 21px;
+  margin-top: 20px;
   margin-left: -60px;
 }
 
@@ -166,14 +174,24 @@ background-color: #eeeeeb;
   width: 100%;
 }
 
+.main_service{
+  margin-bottom: 50px;
+}
+
 .main_service_ttl{
   width: 65%;
   margin: 0px auto;
+}
 
+.main_service_ttl p{
+  margin-bottom: 15px;
+  color: rgb(209, 81, 124);
 }
 
 .main_service_ttl h2{
   color: rgb(139, 139, 139);
+  margin-bottom: 25px;
+  font-size: 20px;
 }
 
 .main_service_content{
@@ -186,13 +204,15 @@ background-color: #eeeeeb;
 
 .service_content-left{
   background-color: rgb(172, 30, 89);
-  display: inline-block;
   width: 100%;
-  grid-column: 1/2;
   grid-row: 1/3;
   font-size: 14px;
   text-align: justify;
   line-height: 25px;
+}
+
+.service_content-left h2{
+  margin: 12px 0px;
 }
 
 .service_content-left img{
@@ -242,23 +262,19 @@ background-color: #eeeeeb;
   font-size: 16px;
   text-align: justify;
   line-height: 25px;
-  margin:0px;
 }
 
 .service_content-rightunder{
   width: 100%;
   display: inline-block;
   background-color: rgb(209, 171, 187);
-  grid-column: 2/3;
-  grid-row: 2/3;
 }
 
 .service_content-rightunder img {
-    margin-top: 20px;
-    margin-left: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 .main_blog{
-  margin-top: 50px;
   margin-bottom: 50px;
   background-color: rgb(236, 232, 232);
   padding-bottom: 30px;
@@ -266,18 +282,25 @@ background-color: #eeeeeb;
 }
 
 .main_blog_ttl{
-  width: 56%;
+  width: 60%;
   margin: 0px auto;
   text-align: left;
 }
 
+.main_blog_ttl p{
+  color: rgb(209, 81, 124);
+  padding: 15px 0px;
+}
+
 .main_blog_ttl h2{
-  color: darkgray;
+  color: rgb(136, 135, 135);
+  font-size: 20px;
+  margin-bottom: 30px;
 }
 
 .main_blog_content{
   display: flex;
-  width: 60%;
+  width: 65%;
   justify-content: space-around;
   margin: 0px auto;
 
@@ -325,7 +348,6 @@ padding-top: 15px;
 .blog_link_buttun{
   margin-top: 30px;
   text-align: center;
-
 }
 
 .blog_link_buttun a{
@@ -348,8 +370,15 @@ padding-top: 15px;
   margin: 0 auto;
 }
 
+.main_company_ttl p{
+  color: rgb(209, 81, 124);
+  margin-bottom: 15px;
+}
+
 .main_company_ttl h2{
   color: rgb(134, 134, 134);
+  margin-bottom: 25px;
+  font-size: 20px;
 }
 
 
@@ -387,18 +416,24 @@ padding-top: 15px;
 
 .main_recruit h2{
   position: absolute;
-  top: 35%;
-  left: 40%;
+  top: 45%;
+  left: 42%;
   color: aliceblue;
+  font-size: 20px;
 }
 
 .main_contact{
-margin-bottom: 80px;
+margin-bottom: 70px;
 }
+
 .contact_content{
   text-align: center;
   margin-bottom: 30px;
   color: rgb(121, 121, 121);
+}
+
+.contact_content p{
+  margin-bottom: 20px;
 }
 
 .main_line{
@@ -409,7 +444,7 @@ margin-bottom: 80px;
   position: relative;
   text-decoration: none;
   color: aliceblue;
-  background-color: palevioletred;
+  background-color:  rgb(209, 81, 124);
   display: inline-block;
   width: 250px;
   padding: 18px 0px ;
