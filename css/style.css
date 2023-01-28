@@ -226,6 +226,7 @@ background-color: #eeeeeb;
 
 .content_text-left{
   color: aliceblue;
+  width: 440px;
 }
 
 .content_text-left h2 {
@@ -240,6 +241,7 @@ background-color: #eeeeeb;
 
 .service_content-righttop{
   background-color: rgb(173, 104, 133);
+  width: 440px;
 }
 
 .service_content-righttop img{
@@ -249,13 +251,12 @@ background-color: #eeeeeb;
 
 .content_text {
   float: right;
-  width: 70%;
   color: aliceblue;
   font-size: 14px;
   line-height: 25px;
   margin-top: 25px;
   padding-left: 20px;
-  box-sizing: border-box;
+  margin-right: 30px;
 }
 
 .content_text p{
@@ -318,6 +319,12 @@ background-color: #eeeeeb;
   background-color: white;
   border-bottom-left-radius:10px ;
   border-bottom-right-radius: 10px;
+}
+
+@media(max-width:1200px) {
+  .blog_card{
+    margin-left: 30px;
+  }
 }
 
 .blog_card img{
