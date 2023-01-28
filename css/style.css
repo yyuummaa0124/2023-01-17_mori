@@ -305,31 +305,23 @@ background-color: #eeeeeb;
 
 .main_blog_content{
   display: flex;
-  width: 65%;
+  width: 860px;
   justify-content: space-around;
   margin: 0px auto;
-
 }
 
 .blog_card{
-  display: inline-block;
   width: 240px;
-  height: 280px;
   position: relative;
   background-color: white;
   border-bottom-left-radius:10px ;
   border-bottom-right-radius: 10px;
 }
 
-@media(max-width:1200px) {
-  .blog_card{
-    margin-left: 30px;
-  }
-}
-
 .blog_card img{
   border-top-right-radius: 10px ;
   border-top-left-radius: 10px;
+  width: 100%;
 }
 
 .blog_card_ship{
@@ -342,18 +334,20 @@ background-color: #eeeeeb;
 }
 
 .blog_card_title{
-width: 80%;
+width: 85%;
 margin: 0 auto;
 font-size: 13px;
 padding-top: 15px;
+line-height: 25px;
 }
 
 .card_bottom_info{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   color: darkgray;
   font-size: 13px;
-  margin-top: 10px;
+  width: 85%;
+  margin: 20px auto;
 }
 
 .blog_link_buttun{
